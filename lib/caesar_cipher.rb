@@ -1,4 +1,4 @@
-def caesar_cipher(string, shift)
+ def caesar_cipher(string, shift)
   string.gsub(/[a-zA-Z]/) do |letter|
     code = letter.ord 
     if code > 64 && code < 91 # upcase letters
@@ -27,4 +27,4 @@ def caesar_cipher(string, shift)
   end
 end
 
-puts caesar_cipher("Have a NICE day!", -362)
+# puts caesar_cipher("Have a NICE day!", -362)
