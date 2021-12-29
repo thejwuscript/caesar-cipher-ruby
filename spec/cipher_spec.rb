@@ -24,4 +24,9 @@ describe "#caesar_cipher" do
   it "encrypts lower and uppercase letters" do
     expect(caesar_cipher("Tag", 7)).to eql ('Ahn')
   end
+
+  it "works with large negative shift factor" do
+    expect(caesar_cipher("Weather", -77)).to eql('Xfbuifs')
+  end
+
 end
